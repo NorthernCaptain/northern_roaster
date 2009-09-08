@@ -1,0 +1,13 @@
+// This IDL file contains common interfaces for all Northern Captain software
+// We define special namespace NorthernCaptaion for all interfaces being placed here
+
+module NorthernCaptain
+{
+    //Server control common interface - allows to request server version, name 
+    //and shutdown the server from client.
+    interface ServerControl
+    {
+        string get_version(out long ver);
+        oneway void shutdown();
+    };
+};

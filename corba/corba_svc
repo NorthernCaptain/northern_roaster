@@ -1,0 +1,57 @@
+#!/bin/sh
+#
+# corba_svc	...
+#
+# chkconfig: 345 70 70
+# description: corba services
+# processname: corba_svc
+#
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+if [ -r /etc/sysconfig/corba_cfg ]; then
+    . /etc/sysconfig/corba_cfg
+fi
+
+RETVAL=0
+
+case "$1" in
+	start)
+		echo -n "Starting CORBA NAMING SERVICE: "
+		bash -c "$ACE_ROOT/TAO/orbsvcs/Naming_Service/Naming_Service -ORBDottedDecimalAddresses 1 -ORBendpoint \
+                    iiop://${CORBA_LOC:-localhost:2809} -m 0 &" \
+                    && echo_success || echo_failure
+		RETVAL=$?
+		echo
+		echo -n "Starting CORBA NOTIFY SERVICE: "
+		bash -c "$ACE_ROOT/TAO/orbsvcs/Notify_Service/Notify_Service -ORBDottedDecimalAddresses 1 -ORBDefaultInitRef \
+                    corbaloc::${CORBA_LOC:-localhost:2809} -NameSvc \
+                    2>/dev/null &" \
+                    && echo_success || echo_failure
+		RETVAL=$?
+		echo
+		[ $RETVAL -eq 0 ] && touch /var/lock/subsys/corba_svc
+		;;
+	stop)
+		echo -n "Shutting down CORBA NOTIFY SERVICE: "
+		killproc Notify_Service
+		RETVAL=$?
+		echo
+		echo -n "Shutting down CORBA NAMING SERVICE: "
+		killproc Naming_Service
+		RETVAL=$?
+		echo
+		[ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/corba_svc
+		;;
+	restart|reload)
+		$0 stop
+		$0 start
+		RETVAL=$?
+		;;
+	*)
+		echo "Usage: corba_svc {start|stop|restart|reload}"
+		exit 1
+esac
+
+exit $RETVAL

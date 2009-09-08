@@ -1,0 +1,154 @@
+// This IDL file contains interfaces for Northern Roaster package 
+// for Blues Coffee Co.   (c) Leo 2004.
+
+module NR_iface
+{
+    //transferring coffee sorts
+
+    struct   CoffeeSort
+    {
+	string                uniq_name;
+	string                full_name;
+	long                  qty;
+    };
+
+    typedef sequence<CoffeeSort>      Sorts;    
+
+    interface RoastCoffeeSort
+    {
+	long                  get_coffee_sort_list(out Sorts lst);
+	long                  get_input_coffee_sort_list(in string sort, out Sorts lst);
+	boolean               set_coffee_sort_list(in Sorts lst);
+    };
+
+
+    //users and their names
+    struct   UserName
+    {
+	string                uniq_name;
+	string                full_name;
+    };
+
+    typedef sequence<UserName>      Users;    
+
+    interface RoastUsers
+    {
+	long                  get_users_list(out Users lst);
+	boolean               set_users_list(in Users lst);
+    };
+
+
+    //roast levels and their names
+    struct   RoastLevel
+    {
+	string                uniq_name;
+	string                full_name;
+    };
+
+    typedef sequence<RoastLevel>      Levels;
+
+    interface RoastLevels
+    {
+	long                  get_lvl_list(out Levels lst);
+	boolean               set_lvl_list(in Levels lst);
+    };
+
+    //roast states and their names
+    struct   RoastState
+    {
+	string                uniq_name;
+	string                full_name;
+    };
+
+    typedef sequence<RoastState>      States;
+
+    interface RoastStates
+    {
+	long                  get_state_list(out States lst);
+	boolean               set_state_list(in States lst);
+    };
+
+
+    //roast weights and their names
+    struct   RoastWeight
+    {
+	string                uniq_name;
+	string                full_name;
+    };
+
+    typedef sequence<RoastWeight>      Weights;
+
+    interface RoastWeights
+    {
+	long                  get_weight_list(out Weights lst);
+	boolean               set_weight_list(in Weights lst);
+    };
+
+
+    //roast data and control
+    struct   DataRow
+    {
+	short                 t_input;
+	short                 t_output;
+	short                 t_base;
+	short                 t_action;
+	short                 t_flags;
+	long                  row_date;
+	long                  daq1;
+	long                  daq2;
+    };
+
+    typedef sequence<DataRow>         DataRowSeq;
+    
+    struct   DataHeader
+    {
+	long                  session_id;
+	long                  user_id;
+	string                user_name;
+	string                user_full_name;
+	string                sort_name;
+	string                sort_full_name;
+	string                input_sort_name;
+	string                input_sort_full_name;
+	string                lvl_full_name;
+	string                lvl_short_name;
+	string                wei_full_name;
+	long                  weight;
+	string                output_wei_full_name;
+	long                  output_weight;
+	string                full_in_state;
+	string                short_in_state;
+    };
+
+    struct   DataBlock
+    {
+	long                  session_id;
+	long                  user_id;
+	long                  start_offset;
+	long                  length;
+	DataRowSeq            rows;
+    };
+
+    struct   DataBlockRequest
+    {
+	string                dev_name;
+	long                  from_offset;
+	long                  length;
+    };
+
+    interface RoastCom
+    {
+	boolean               get_data_block(in DataBlockRequest req,
+					     out DataBlock block);
+	long                  roaster_login(in string dev_name, in DataHeader hdr);
+	boolean               roaster_logout(in string dev_name, in long user_id);
+	boolean               roaster_finish_roast(in string dev_name, 
+						   in long user_id,
+						   in string wei_descr,
+						   in long weight,
+						   in string status_descr,
+						   in string status_short_name);
+	boolean               roaster_start_loading(in string dev_name);
+	boolean               roaster_start_unloading(in string dev_name);
+    };
+};

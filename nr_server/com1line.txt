@@ -1,0 +1,1872 @@
+[20/04/2006 20:29:14]
+1  IRP_MJ_CREATE - Opens a COM port (COM1)
+   STATUS_SUCCESS
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+3  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_BAUD_RATE - Returns the baud rate that is currently set for a COM port
+            BaudRate - 9600
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+5  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_LINE_CONTROL - Request returns information about the line control set for a COM port
+            StopBits - 0
+            Parity - 0
+            WordLength - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+7  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_CHARS - Request returns the special characters that Serial uses with handshake flow control
+            EofChar - 0
+            ErrorChar - 0
+            BreakChar - 0
+            EventChar - 0
+            XonChar - 17
+            XoffChar - 19
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+9  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_HANDFLOW - Request returns information about the configuration of the handshake flow control set for a COM port
+            ControlHandShake - 0x1 (SERIAL_DTR_CONTROL)
+            FlowReplace - 0x40 (SERIAL_RTS_CONTROL)
+            XonLimit - 2048
+            XoffLimit - 512
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+11  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_BAUD_RATE - Returns the baud rate that is currently set for a COM port
+            BaudRate - 9600
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+13  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_LINE_CONTROL - Request returns information about the line control set for a COM port
+            StopBits - 0
+            Parity - 0
+            WordLength - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+15  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_CHARS - Request returns the special characters that Serial uses with handshake flow control
+            EofChar - 0
+            ErrorChar - 0
+            BreakChar - 0
+            EventChar - 0
+            XonChar - 17
+            XoffChar - 19
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+17  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_HANDFLOW - Request returns information about the configuration of the handshake flow control set for a COM port
+            ControlHandShake - 0x1 (SERIAL_DTR_CONTROL)
+            FlowReplace - 0x40 (SERIAL_RTS_CONTROL)
+            XonLimit - 2048
+            XoffLimit - 512
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+19  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_BAUD_RATE - Request sets the baud rate on a COM port. Serial verifies the specified baud rate
+            BaudRate - 9600
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+21  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_RTS - Request sets RTS
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+23  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_DTR - Request sets DTR
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+25  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_LINE_CONTROL - Request sets the line control register
+            StopBits - 0
+            Parity - 0
+            WordLength - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+27  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_CHARS - Request sets the special characters that Serial uses for handshake flow control
+            EofChar - 0
+            ErrorChar - 0
+            BreakChar - 0
+            EventChar - 0
+            XonChar - 17
+            XoffChar - 19
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+29  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_HANDFLOW - Request sets the configuration of handshake flow control
+            ControlHandShake - 0x1 (SERIAL_DTR_CONTROL)
+            FlowReplace - 0x40 (SERIAL_RTS_CONTROL)
+            XonLimit - 2048
+            XoffLimit - 512
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+31  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_GET_TIMEOUTS - Returns the timeout values that Serial uses with read and write requests
+            ReadIntervalTimeout - 5
+            ReadTotalTimeoutMultiplier - 5
+            ReadTotalTimeoutConstant - 5
+            WriteTotalTimeoutMultiplier - 0
+            WriteTotalTimeoutConstant - 0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+33  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_TIMEOUTS - Request sets the timeout value's that the driver uses with read and write requests
+            ReadIntervalTimeout - 5
+            ReadTotalTimeoutMultiplier - 5
+            ReadTotalTimeoutConstant - 5
+            WriteTotalTimeoutMultiplier - 0
+            WriteTotalTimeoutConstant - 0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+35  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_SET_QUEUE_SIZE - Request sets the size of the internal receive buffer
+            InSize - 2048
+            OutSize - 1024
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+37  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+39  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 12
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+41  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      24                                              	$
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+43  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+45  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+47  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+49  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+51  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+53  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+55  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+57  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+59  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+61  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+63  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+65  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+67  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+69  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+71  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+73  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+75  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      21                                              	!
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+77  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+79  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+81  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+83  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+85  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+87  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+89  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+91  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+93  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      42                                              	B
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+95  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      45                                              	E
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+97  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+99  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+101  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+103  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+105  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+107  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      45                                              	E
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+109  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      39                                              	9
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+111  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      38                                              	8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:14]
+113  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+115  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+117  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+119  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+121  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+123  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+125  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+127  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+129  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+131  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+133  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+135  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+137  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+139  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+141  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+143  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+145  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+147  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+149  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+151  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+153  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+155  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      32                                              	2
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+157  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      35                                              	5
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+159  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:15]
+161  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+163  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+165  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 12
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+167  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      24                                              	$
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+169  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+171  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+173  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+175  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+177  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+179  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+181  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+183  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+185  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+187  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+189  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+191  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+193  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+195  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+197  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+199  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      21                                              	!
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+201  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+203  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+205  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+207  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+209  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+211  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+213  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+215  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+217  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      38                                              	8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+219  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+221  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+223  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+225  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+227  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+229  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+231  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      38                                              	8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+233  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+235  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+237  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      35                                              	5
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+239  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+241  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+243  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+245  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+247  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+249  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+251  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+253  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+255  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+257  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+259  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+261  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:16]
+263  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+265  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+267  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+269  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+271  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+273  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+275  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+277  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+279  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+281  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      46                                              	F
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+283  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+285  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+287  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:17]
+289  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+291  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+293  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 12
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+295  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      24                                              	$
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+297  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+299  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+301  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+303  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+305  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+307  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+309  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+311  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+313  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+315  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+317  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+319  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+321  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+323  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+325  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+327  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      21                                              	!
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+329  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+331  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+333  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+335  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+337  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+339  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+341  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+343  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+345  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+347  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      38                                              	8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+349  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      35                                              	5
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+351  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+353  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+355  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+357  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+359  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      42                                              	B
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+361  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      35                                              	5
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+363  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+365  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+367  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+369  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+371  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+373  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+375  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+377  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+379  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+381  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+383  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+385  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:18]
+387  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+389  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+391  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+393  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+395  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+397  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+399  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+401  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+403  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+405  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+407  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+409  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+411  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+413  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      45                                              	E
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+415  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:19]
+417  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+419  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+421  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 12
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+423  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      24                                              	$
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+425  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+427  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+429  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+431  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+433  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+435  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+437  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+439  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+441  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+443  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+445  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+447  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+449  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+451  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+453  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+455  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      21                                              	!
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+457  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+459  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+461  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+463  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+465  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+467  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+469  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+471  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+473  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      45                                              	E
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+475  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+477  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+479  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+481  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+483  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+485  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+487  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      32                                              	2
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+489  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+491  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+493  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      37                                              	7
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+495  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+497  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+499  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+501  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+503  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+505  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+507  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+509  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+511  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+513  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+515  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+517  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+519  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+521  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+523  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+525  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+527  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+529  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+531  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+533  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+535  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      46                                              	F
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+537  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      46                                              	F
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+539  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:20]
+541  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+543  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+545  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 12
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+547  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      24                                              	$
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+549  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+551  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+553  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+555  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+557  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+559  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+561  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+563  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+565  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+567  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+569  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+571  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+573  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+575  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+577  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+579  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      21                                              	!
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+581  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+583  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+585  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+587  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+589  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+591  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+593  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      39                                              	9
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+595  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+597  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      32                                              	2
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+599  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+601  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+603  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+605  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+607  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+609  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      33                                              	3
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+611  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+613  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+615  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+617  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+619  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+621  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+623  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      34                                              	4
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+625  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+627  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+629  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+631  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:22]
+633  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+635  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+637  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+639  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+641  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+643  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+645  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+647  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+649  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+651  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+653  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+655  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+657  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+659  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+661  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+663  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+665  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      44                                              	D
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+667  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:23]
+669  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+671  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 8
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+673  IRP_MJ_DEVICE_CONTROL - Request operates a serial port
+   STATUS_SUCCESS
+         IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers
+            Flags - 12
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+675  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      24                                              	$
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+677  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+679  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+681  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+683  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+685  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+687  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+689  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+691  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+693  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+695  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+697  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+699  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+701  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+703  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+705  IRP_MJ_WRITE - Request transfers data from a client to a COM port
+   STATUS_SUCCESS
+      0d                                              	.
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+707  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      21                                              	!
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+709  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+711  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+713  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      30                                              	0
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+715  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      31                                              	1
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+717  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+719  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      52                                              	R
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+721  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      36                                              	6
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+723  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_TIMEOUT
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+725  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      41                                              	A
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+727  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      32                                              	2
+----------------------------------------------------------------------------------
+[20/04/2006 20:29:24]
+729  IRP_MJ_READ - Transfers data from a COM port to a client
+   STATUS_SUCCESS
+      43                                              	C
+----------------------------------------------------------------------------------

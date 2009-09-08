@@ -1,0 +1,3 @@
+CORBA_LOC=localhost:2809
+ACE_ROOT=/home/leo/ACE
+export LD_LIBRARY_PATH=$ACE_ROOT/ace:$LD_LIBRARY_PATH
