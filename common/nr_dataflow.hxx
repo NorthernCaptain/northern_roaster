@@ -102,6 +102,7 @@ public:
     time_t                    roast_end;            //end time of current roast
     int                       total_rows;           //total number of measures in this roast
     int                       time_step;            //time step of measurements in seconds
+    int                       rcn_id;               //rcn id for input sku
 
     void                      save_header(gzFile fd);
     void                      init_fields();
@@ -115,6 +116,7 @@ public:
     void                      set_input_coffee_sort(const char* sort_full, const char* sort_short);
     void                      set_roast_weight(const char* lvl, int value);
     void                      set_roast_output_weight(const char* lvl, int value);
+    void                      set_rcn_id(int ircn_id);
 };
 
 //Vector that stores temperatures (rows)

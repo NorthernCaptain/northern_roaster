@@ -46,6 +46,13 @@ public:
     bool         validate(const std::string& buf);
 };
 
+class DecodeUInt: public DecodeSym
+{
+public:
+    Uint16       decode(Uint16 from);
+    bool         validate(const std::string& buf);
+};
+
 class Textinput: public Textlabel
 {
     SDL_Surface*     cursor_image;

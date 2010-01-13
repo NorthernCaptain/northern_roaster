@@ -118,6 +118,7 @@ module NR_iface
 	long                  output_weight;
 	string                full_in_state;
 	string                short_in_state;
+	long                  rcn_id;
     };
 
     struct   DataBlock
@@ -150,5 +151,8 @@ module NR_iface
 						   in string status_short_name);
 	boolean               roaster_start_loading(in string dev_name);
 	boolean               roaster_start_unloading(in string dev_name);
+	boolean               roaster_check_rcn(in string input_sort_name,
+						in string short_in_state,
+						in long rcn_id);
     };
 };

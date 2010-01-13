@@ -29,7 +29,7 @@ Screen_Intro::Screen_Intro(ScanTaskPtr& scan, Game* _game, const char* _name) : 
 
     sts_full_name->escape_signal.connect(SigC::slot(*sts_box, &Listbox::my_focus));
     sts_full_name->next_focus_signal.connect(SigC::slot(*sts_box, &GameObject::my_focus));
-    sts_full_name->activate_signal.connect(SigC::slot(*this, &Screen_Intro::sts_edit_activated));
+    sts_full_name->activate_signal.connect(SigC::slot(*this, &Screen_Intro::rcn_edit_activated));
     sts_full_name->unprocessed_signal.connect(SigC::slot(*this, &Screen_Intro::unprocessed_event));
 
     lbox->unprocessed_signal.connect(SigC::slot(*this, &Screen_Intro::unprocessed_event));
@@ -47,7 +47,7 @@ Screen_Intro::Screen_Intro(ScanTaskPtr& scan, Game* _game, const char* _name) : 
     temp1_lbl=DigitlabelPtr(new Digitlabel(0, game, "main_temp1"));
     temp2_lbl=DigitlabelPtr(new Digitlabel(10, game, "main_temp2"));
 
-    //    sts_full_name->set_decoder(new DecodeKOI8());
+    sts_full_name->set_decoder(new DecodeUInt());
 
 
     lbox->my_focus();
@@ -76,8 +76,8 @@ void Screen_Intro::sts_item_activated(ListboxItem item)
 	}
     }
 
-    hide();
-    finished_signal.emit();
+    sts_full_name->set_text("");
+    sts_full_name->my_focus();
 }
 
 void Screen_Intro::sts_edit_activated(std::string&)
@@ -114,6 +114,39 @@ void Screen_Intro::sts_edit_activated(std::string&)
     }
     sync_listbox();
     sts_box->my_focus();
+}
+
+
+void Screen_Intro::rcn_edit_activated(std::string&)
+{
+    std::string      full_str=sts_full_name->get_text();
+
+    if(full_str.empty())
+    {
+	sts_full_name->my_focus();
+	return;
+    }
+
+    char *ptr;
+    long int rcn_id = strtol(full_str.c_str(), &ptr, 10);
+
+    if(ptr == full_str.c_str())
+    {
+	set_warn("Введите числовой номер накладной!");
+	sts_full_name->my_focus();
+	return;
+    }
+
+    
+    if(!scan_task->set_rcn_id((int)rcn_id))
+    {
+	set_warn("Неверный номер накладной! Введите существующий номер");
+	sts_full_name->my_focus();
+	return;	
+    }
+
+    hide();
+    finished_signal.emit();
 }
 
 //Go to new screen, login user and start new session

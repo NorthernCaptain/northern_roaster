@@ -25,6 +25,7 @@ class Screen_Intro: public Screen_Base
     void                      lvl_item_activated(ListboxItem item);
     void                      sts_edit_activated(std::string&);
     void                      sts_item_activated(ListboxItem item);
+    void                      rcn_edit_activated(std::string&);
     void                      unprocessed_event(SDL_Event*);
 
     void                      sync_listbox();

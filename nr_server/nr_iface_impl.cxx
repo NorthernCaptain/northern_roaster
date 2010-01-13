@@ -50,6 +50,7 @@ CORBA::Long    RoastCom_Impl::roaster_login(const char* dev_name,
     store.set_roast_weight(hdr.wei_full_name.in(), hdr.weight);
     store.set_roast_output_weight(hdr.output_wei_full_name.in(), hdr.output_weight);
     store.set_roast_in_state(hdr.full_in_state.in(), hdr.short_in_state.in());
+    store.set_rcn_id(hdr.rcn_id);
     store.new_session();
     store.start_session();
 
@@ -188,6 +189,61 @@ CORBA::Boolean  RoastCom_Impl::roaster_start_unloading(const char* dev_name)
     return true;
 }
 
+
+CORBA::Boolean  RoastCom_Impl::roaster_check_rcn(const char* inp_sort_name, const char* inp_short_lvl, CORBA::Long rcn_id)
+    throw (CORBA::SystemException)
+{
+    TIMEOBJ("corba:check_rcn");
+    DBG(4, "RoastCom_Impl::roaster_check_rcn: checking RCN_ID=" << rcn_id
+	<< " for SKU: " << inp_sort_name);
+
+    if(rcn_id == 0)
+	return true;
+
+    otl_connect_ptr con;
+
+    int ret = 0;
+    try
+    {
+	con = DBIMAN::instance()->getDBConnection();
+    }
+    catch(...)
+    {
+	return 0;
+    }
+
+    try
+    {
+
+	//otl_stream_wrapper_ptr str(con->new_stream(50, "select dbo.is_valid_getId(:sku<char[32]>,:lvl<char[32]>,:rcn<int>) as ret, skuId from sku"));
+	otl_stream_wrapper_ptr str(con->new_stream(50, "select result from v_roast_gets where Name=:sku<char[32]> and getId=:rcn<int>"));
+	DBG(4, "SQL: select result from v_roast_gets where Name='" << inp_sort_name << "' and getId=" 
+	    << rcn_id << ";");
+
+	(*str) << inp_sort_name;
+	//	(*str) << inp_short_lvl;
+	(*str) << rcn_id;
+
+
+	(*str) >> ret;
+	DBG(4, "SQL: got result code: " << ret);
+    }
+    catch(DBQueryException& ex)
+    {
+	DBG(-1, "RoastSorts_ImplDB: ERROR DBQueryException:");
+	DBG(-1, ex.getLocalizedMessage(""));
+	DBIMAN::instance()->badConnection(con);
+	try
+	{
+	    con = DBIMAN::instance()->getDBConnection();
+	}
+	catch(...) {}
+	return true;
+    } 
+
+    
+    return ret > 0;
+}
 
 //-------------------------------------------------------------------------
 // Return requested data rows from device storage

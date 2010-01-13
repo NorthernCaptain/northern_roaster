@@ -28,6 +28,7 @@ namespace POA_NR_iface
 						   const char* state_short_name) throw (CORBA::SystemException);
 	CORBA::Boolean        roaster_start_loading(const char* dev_name) throw (CORBA::SystemException);
 	CORBA::Boolean        roaster_start_unloading(const char* dev_name) throw (CORBA::SystemException);
+	CORBA::Boolean        roaster_check_rcn(const char* inp_sort_name, const char* inp_short_lvl, CORBA::Long rcn_id)  throw (CORBA::SystemException);
     };
 
 

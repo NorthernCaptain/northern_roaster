@@ -200,6 +200,7 @@ void ScanTask::new_session_login()
 	//set the same as input weight because we don't know real one yet
 	hdr->output_wei_full_name=CORBA::string_dup(data->wei_descr);
 	hdr->output_weight=data->roast_weight;
+	hdr->rcn_id = data->rcn_id;
     }
     DBG(4, "ScanTask::new_session_login: " << hdr->user_id
 	<< ", name=" << hdr->user_name.in() << ", full=" << hdr->user_full_name.in());
@@ -273,6 +274,26 @@ void ScanTask::shutdown()
     cmd_queue.push(new ScanTaskEvent(stask_shutdown));
     if(my_thread != ACE_OS::thr_self())
 	wait();
+}
+
+
+bool ScanTask::set_rcn_id(int rcn_id)
+{
+    ACE_Guard<ACE_Thread_Mutex>  guard(mtx);
+    if(!transport_inited)
+    {
+	cond.wait(mtx);
+    }
+    
+    if(roast->roaster_check_rcn(data->input_coffee_sort_short, 
+				data->roast_in_state_short, rcn_id))
+    {
+	ROAST_LOCK(data);
+	data->set_rcn_id(rcn_id);
+	return true;
+    }
+    
+    return false;
 }
 
 void ScanTask::set_sort_name(const std::string& short_name,

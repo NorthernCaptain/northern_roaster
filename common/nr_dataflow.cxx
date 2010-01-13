@@ -81,6 +81,7 @@ void RoastHeader::init_fields()
     ACE_OS::strcpy(input_coffee_sort, "unknown sort");
     ACE_OS::strcpy(input_coffee_sort_short, "Unknown");
     ACE_OS::strcpy(roast_in_state_short, "normal");
+    rcn_id = 0;
 }
 
 void RoastHeader::set_dev_name(const std::string& dev_name_)
@@ -141,6 +142,11 @@ void RoastHeader::set_roast_output_weight(const char* lvl, int value)
     roast_output_weight=value;
     ACE_OS::strncpy(output_wei_descr, lvl, L_WEI_DESCR);
     output_wei_descr[L_WEI_DESCR]=0;
+}
+
+void RoastHeader::set_rcn_id(int ircn_id)
+{
+    rcn_id = ircn_id;
 }
 
 void RoastHeader::save_header(gzFile fd)

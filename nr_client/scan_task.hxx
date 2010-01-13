@@ -117,6 +117,7 @@ public:
 					      const std::string& full_name);
     void                      set_output_weight_name(const std::string& short_name,
 						     const std::string& full_name);
+    bool                      set_rcn_id(int rcn_id); //return false if wrong rcn
     RoastStorage*             get_storage() { return data;};
     void                      clear_storage();
     void                      finish_roast();

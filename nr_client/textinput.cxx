@@ -49,6 +49,25 @@ bool DecodeFloat::validate(const std::string& buf)
     return false;
 }
 
+Uint16 DecodeUInt::decode(Uint16 from)
+{
+    return isdigit(from) ? from : 0;
+}
+
+bool DecodeUInt::validate(const std::string& buf)
+{
+    try
+    {
+	 boost::lexical_cast<Uint32>(buf);
+	 return true;
+    } 
+    catch(...)
+    {
+    }
+
+    return false;
+}
+
 //////////////////////////////TextInput class methods//////////////////////////
 
 Textinput::Textinput(const std::string& text, Game* _game, const char* _name, Images fnt) 
