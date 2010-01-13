@@ -48,7 +48,7 @@ void ServerStorageDB::start_session(time_t row_date)
 	try
 	{
 	    otl_stream_wrapper_ptr str(con->new_stream(50, 
-						       "exec p_roast_new_session :id<int>, :worker<char[32]>, :in_sku<char[32]>, :out_sku<char[32]>, :wh_id<int>, :qty<int>, :i_in_state<char[32]>, :i_level<char[32]>, :date<timestamp>"));
+						       "exec p_roast_new_session :id<int>, :worker<char[32]>, :in_sku<char[32]>, :out_sku<char[32]>, :wh_id<int>, :qty<int>, :i_in_state<char[32]>, :i_level<char[32]>, :date<timestamp>, :rcn<int>"));
 	    DBG(4, "SQL: exec p_roast_new_session "
 
 		<< total_session_id << ", "
@@ -58,7 +58,7 @@ void ServerStorageDB::start_session(time_t row_date)
 		<< roast_wh_id << ", "
 		<< roast_weight << ", "
 		<< roast_in_state_short << ", "
-		<< roast_lvl_short);
+		<< roast_lvl_short << ", " << rcn_id);
 
 
 	    (*str) << total_session_id;
@@ -70,6 +70,7 @@ void ServerStorageDB::start_session(time_t row_date)
 	    (*str) << roast_in_state_short; 
 	    (*str) << roast_lvl_short; 
 	    (*str) << Datetime(row_date);
+	    (*str) << rcn_id;
 
 	    break;
 	}
