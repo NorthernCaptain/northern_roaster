@@ -284,7 +284,6 @@ void Screen_Intro::sync_listbox()
     for(SortMap::iterator it=smap2.begin(); it!=smap2.end(); it++)
 	sts_box->add_data(ListboxItem(it->first, it->second->name));
     sts_box->add_data(ListboxItem("noop", "-  Выбор  -"));
-    sts_box->add_data(ListboxItem("new", "-- Новый --"));
     sts_box->sort();
     sts_box->redraw();
     sts_box->set_cursor_by_item_idx(stsbox_item.id);
